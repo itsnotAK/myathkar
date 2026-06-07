@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Before Sleep Athkar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<a class="back" href="index.html">⬅ Back</a>
+
+<h1>🌙 Before Sleep Athkar</h1>
+
+<div class="toggles">
+    <button class="toggle-btn" onclick="toggleClass('translation')">EN</button>
+    <button class="toggle-btn" onclick="toggleClass('transliteration')">TR</button>
+    <button class="toggle-btn" onclick="document.body.classList.toggle('dark')">🌙</button>
+</div>
+
+<div class="athkar-box" onclick="countBox(this)">
+    <p class="arabic">سُبْحَانَ الله</p>
+    <p class="transliteration">SubhanAllah</p>
+    <p class="translation">Glory be to Allah</p>
+    <button class="counter" data-id="sleep-subhanallah" data-current="0" data-total="33">0 / 33</button>
+</div>
+
+<div class="athkar-box" onclick="countBox(this)">
+    <p class="arabic">الْحَمْدُ لله</p>
+    <p class="transliteration">Alhamdulillah</p>
+    <p class="translation">All praise is for Allah</p>
+    <button class="counter" data-id="sleep-alhamdulillah" data-current="0" data-total="33">0 / 33</button>
+</div>
+
+<div class="athkar-box" onclick="countBox(this)">
+    <p class="arabic">اللهُ أَكْبَر</p>
+    <p class="transliteration">Allahu Akbar</p>
+    <p class="translation">Allah is the Greatest</p>
+    <button class="counter" data-id="sleep-allahuakbar" data-current="0" data-total="34">0 / 34</button>
+</div>
+
+<button onclick="resetPage()">Reset Progress</button>
+
+<a id="nextButton" class="next" href="sleep2.html">Next →</a>
+
+</body>
+</html>
