@@ -8,46 +8,41 @@
 </head>
 <body>
 
-<a class="back" href="sleep.html">⬅ Back</a>
-
-<h1>🌙 Before Sleep Athkar 2</h1>
-
-<div class="toggles">
-    <button class="toggle-btn" onclick="toggleClass('translation')">EN</button>
-    <button class="toggle-btn" onclick="toggleClass('transliteration')">TR</button>
-    <button class="toggle-btn" onclick="document.body.classList.toggle('dark')">🌙</button>
+<div class="top-bar">
+    <div class="page-number">Page 2</div>
+    <div class="toggles">
+        <button class="corner-btn" onclick="toggleSetting('showEN')">EN</button>
+        <button class="corner-btn" onclick="toggleSetting('showTR')">TR</button>
+        <button class="corner-btn" onclick="toggleDark()">🌙</button>
+        <button class="corner-btn" onclick="resetAll()">Reset</button>
+    </div>
+</div>
+<div class="title-box">
+    <div class="title-icon">🌙</div>
+    <div class="page-title-ar">أذكار النوم </div>
+    <div class="page-title-en translation">Before Sleep Athkar 2</div>
+    <div class="page-instruction">اقرأ آية الكرسي مرة، ثم آخر آيتين من سورة البقرة مرة.</div>
+    <div class="page-instruction translation">Read Ayat Al-Kursi once, then the last two verses of Surah Al-Baqarah once.</div>
 </div>
 
 <div class="athkar-box" onclick="countBox(this)">
-    <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>قُلْ هُوَ اللَّهُ أَحَدٌ.<br>اللَّهُ الصَّمَدُ.<br>لَمْ يَلِدْ وَلَمْ يُولَدْ.<br>وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ.</p>
-    <p class="transliteration">Surah Al-Ikhlas</p>
-    <p class="translation">Surah Al-Ikhlas</p>
-    <button class="counter" data-id="sleep-ikhlas" data-current="0" data-total="3">0 / 3</button>
+    <p class="arabic">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ.</p>
+    <p class="transliteration">Allahu la ilaha illa Huwa, Al-Hayyul-Qayyum. La ta'khudhuhu sinatun wa la nawm. Lahu ma fis-samawati wa ma fil-ard. Man dhal-ladhi yashfa'u 'indahu illa bi-idhnih. Ya'lamu ma bayna aydihim wa ma khalfahum. Wa la yuhituna bi shay'in min 'ilmihi illa bima sha'. Wasi'a kursiyyuhus-samawati wal-ard. Wa la ya'uduhu hifzuhuma wa Huwal-'Aliyyul-'Azim.</p>
+    <p class="translation">Allah — there is no deity except Him, the Ever-Living, the Sustainer of all existence. Neither drowsiness nor sleep overtakes Him. To Him belongs whatever is in the heavens and whatever is on the earth. Who can intercede with Him except by His permission? He knows what is before them and what is behind them, and they encompass nothing of His knowledge except what He wills. His Kursi extends over the heavens and the earth, and preserving them does not tire Him. He is the Most High, the Most Great.</p>
+    <button class="counter" data-id="sleep-ayat-kursi" data-current="0" data-total="1">0 / 1</button>
 </div>
 
 <div class="athkar-box" onclick="countBox(this)">
-    <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ.<br>مِن شَرِّ مَا خَلَقَ.<br>وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ.<br>وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ.<br>وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.</p>
-    <p class="transliteration">Surah Al-Falaq</p>
-    <p class="translation">Surah Al-Falaq</p>
-    <button class="counter" data-id="sleep-falaq" data-current="0" data-total="3">0 / 3</button>
+    <p class="arabic">آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ.<br><br>لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.</p>
+    <p class="transliteration">Amana ar-rasulu bima unzila ilayhi min rabbihi wal-mu'minun. Kullun amana billahi wa mala'ikatihi wa kutubihi wa rusulih. La nufarriqu bayna ahadin min rusulih. Wa qalu sami'na wa ata'na, ghufranaka rabbana wa ilaykal-masir. La yukallifullahu nafsan illa wus'aha. Laha ma kasabat wa 'alayha maktasabat. Rabbana la tu'akhidhna in nasina aw akhta'na. Rabbana wa la tahmil 'alayna isran kama hamaltahu 'alal-ladhina min qablina. Rabbana wa la tuhammilna ma la taqata lana bih. Wa'fu 'anna, waghfir lana, warhamna. Anta mawlana fansurna 'alal-qawmil-kafirin.</p>
+    <p class="translation">The Messenger has believed in what was revealed to him from his Lord, and so have the believers. All of them believe in Allah, His angels, His books, and His messengers, saying: We make no distinction between any of His messengers. They say: We hear and we obey. Grant us Your forgiveness, our Lord, and to You is the final return. Allah does not burden a soul beyond what it can bear. It will have what good it has earned, and it will bear what evil it has earned. Our Lord, do not punish us if we forget or make a mistake. Our Lord, do not place upon us a burden like the one You placed upon those before us. Our Lord, do not burden us with what we cannot bear. Pardon us, forgive us, and have mercy on us. You are our Protector, so help us against the disbelieving people.</p>
+    <button class="counter" data-id="sleep-baqarah-last" data-current="0" data-total="1">0 / 1</button>
 </div>
 
-<div class="athkar-box" onclick="countBox(this)">
-    <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ<br>قُلْ أَعُوذُ بِرَبِّ النَّاسِ.<br>مَلِكِ النَّاسِ.<br>إِلَٰهِ النَّاسِ.<br>مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ.<br>الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ.<br>مِنَ الْجِنَّةِ وَالنَّاسِ.</p>
-    <p class="transliteration">Surah An-Nas</p>
-    <p class="translation">Surah An-Nas</p>
-    <button class="counter" data-id="sleep-nas" data-current="0" data-total="3">0 / 3</button>
+<div class="bottom-nav">
+    <a class="prev" href="sleep.html">Previous</a>
+    <a id="nextButton" class="next" href="sleep3.html">Next</a>
 </div>
 
-<div class="athkar-box">
-    <p class="arabic">بعد قراءة الإخلاص والفلق والناس: انفث في كفيك، ثم امسح بهما ما استطعت من جسدك، تبدأ بالرأس والوجه وما أقبل من الجسد. وتكررها 3 مرات.</p>
-</div>
-
-<a id="nextButton" class="next" href="sleep3.html">Next →</a>
-
-<div class="nav-buttons">
-    <a class="prev" href="sleep.html">← Previous</a>
-    <a id="nextButton" class="next" href="sleep3.html">Next →</a>
-</div>
 </body>
 </html>
